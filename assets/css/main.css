@@ -2674,7 +2674,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/home.jpg");
 		background-position: center center;
 		background-size: cover;
 		height: 28em;
@@ -2825,7 +2825,7 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				height: 24em;
+				height: 15em;
 			}
 
 	}
