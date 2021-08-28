@@ -11,4 +11,4 @@ remote repositoryでファイルを変更してpullをせずに、ローカル�
 Git BashでLocal環境の「v2mv02e2ax.github.io」のディレクトリへ移動して以下のコードを打ち込む。
 ```bash
 git pull
-```bash
+```
