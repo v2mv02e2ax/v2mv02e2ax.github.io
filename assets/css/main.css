@@ -2307,6 +2307,20 @@ input, select, textarea {
 	background-position: top left, center center;
 }
 
+#threeenglish {
+	background: url("images/overlay.png"), url("../../images/three.jpg");
+	background-size: 256px 256px, cover;
+	background-attachment: fixed, fixed;
+	background-position: top left, center center;
+}
+
+#fourenglish {
+	background: url("images/overlay.png"), url("../../images/gakusai.jpg");
+	background-size: 256px 256px, cover;
+	background-attachment: fixed, fixed;
+	background-position: top left, center center;
+}
+
 
 /* Contact */
 
