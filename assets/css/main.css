@@ -2294,14 +2294,14 @@ input, select, textarea {
 }
 
 #oneenglish {
-	background: url("images/overlay.png"), url("../../images/live.jpg");
+	background: url("images/overlay.png"), url("../../images/one_e.jpg");
 	background-size: 256px 256px, cover;
 	background-attachment: fixed, fixed;
 	background-position: top left, center center;
 }
 
 #twoenglish {
-	background: url("images/overlay.png"), url("../../images/insi.jpg");
+	background: url("images/overlay.png"), url("../../images/two_e.jpg");
 	background-size: 256px 256px, cover;
 	background-attachment: fixed, fixed;
 	background-position: top left, center center;
@@ -2315,7 +2315,7 @@ input, select, textarea {
 }
 
 #fourenglish {
-	background: url("images/overlay.png"), url("../../images/gakusai.jpg");
+	background: url("images/overlay.png"), url("../../images/four_e.jpg");
 	background-size: 256px 256px, cover;
 	background-attachment: fixed, fixed;
 	background-position: top left, center center;
