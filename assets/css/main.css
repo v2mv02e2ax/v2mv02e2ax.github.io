@@ -442,7 +442,7 @@ input, select, textarea {
 			content: '\f1ce';
 			cursor: default;
 			display: block;
-			font-size: 2em;
+			font-size: 0em; /*真ん中の四角形のやつの大きさ, デフォルトは2em */
 			height: 2em;
 			left: 50%;
 			line-height: 2em;
@@ -503,9 +503,9 @@ input, select, textarea {
 		font-family: "Source Sans Pro", "sans-serif";
 		font-weight: 300;
 		font-size: 18pt;
-		line-height: 1.4em; /*全体の行間を調整 デフォルトは1.75*/
+		line-height: 1.3em; /*全体の行間を調整 デフォルトは1.75em*/
 		color: #39454b;
-		letter-spacing: 0.025em;
+		letter-spacing: 0.025em; /*全体の文字間を調整 デフォルトのまま*/
 	}
 
 		@media screen and (max-width: 1920px) {
@@ -519,7 +519,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			body, input, textarea, select {
-				font-size: 15pt;
+				font-size: 13.5pt; /*全体の文字を調整 デフォルトは15pt*/
 			}
 
 		}
