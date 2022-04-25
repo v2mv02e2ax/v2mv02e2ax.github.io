@@ -503,7 +503,7 @@ input, select, textarea {
 		font-family: "Source Sans Pro", "sans-serif";
 		font-weight: 300;
 		font-size: 18pt;
-		line-height: 1.3em; /*全体の行間を調整 デフォルトは1.75em*/
+		line-height: 1.2em; /*全体の行間を調整 デフォルトは1.75em*/
 		color: #39454b;
 		letter-spacing: 0.025em; /*全体の文字間を調整 デフォルトのまま*/
 	}
