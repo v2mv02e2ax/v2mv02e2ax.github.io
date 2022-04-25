@@ -511,15 +511,15 @@ input, select, textarea {
 		@media screen and (max-width: 1920px) {
 
 			body, input, textarea, select {
-				font-size: 17pt;
+				font-size: 17pt; 
 			}
 
 		}
 
-		@media screen and (max-width: 1680px) {
+		@media screen and (max-width: 1680px) { 
 
 			body, input, textarea, select {
-				font-size: 13pt; /*全体の文字を調整 デフォルトは15pt*/
+				font-size: 15pt; /*全体の文字を調整 デフォルトは15pt*/
 			}
 
 		}
@@ -1957,7 +1957,7 @@ input, select, textarea {
 		}
 
 			.main.style1 h2 {
-				font-size: 4.7em; /*これでタイトルとかをh2にしてると文字の大きさ調整できそう, デフォルトは4.25em*/
+				font-size: 4.25em; /*これでタイトルとかをh2にしてると文字の大きさ調整できそう, デフォルトは4.25em*/
 				line-height: 1em;
 			}
 
