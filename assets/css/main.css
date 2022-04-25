@@ -503,7 +503,7 @@ input, select, textarea {
 		font-family: "Source Sans Pro", "sans-serif";
 		font-weight: 300;
 		font-size: 18pt;
-		line-height: 1.2em; /*全体の行間を調整 デフォルトは1.75em*/
+		line-height: 1.1em; /*全体の行間を調整 デフォルトは1.75em*/
 		color: #39454b;
 		letter-spacing: 0.025em; /*全体の文字間を調整 デフォルトのまま*/
 	}
@@ -519,7 +519,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) { 
 
 			body, input, textarea, select {
-				font-size: 15pt; /*全体の文字を調整 デフォルトは15pt*/
+				font-size: 16pt; /*全体の文字および幅を調整 デフォルトは15pt*/
 			}
 
 		}
