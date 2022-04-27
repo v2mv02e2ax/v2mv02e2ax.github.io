@@ -122,7 +122,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			html {
-				font-size: 11pt; /*デフォルトは12ptだったけど、これで11pxにしたらスクリーンで違いが減りそう*/
+				font-size: 11pt; /*デフォルトは12ptだった*/
 			}
 
 		}
@@ -138,7 +138,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			html {
-				font-size: 11pt; /*デフォルトは10ptだったけど、これで11pxにしたらスクリーンで違いが減りそう*/
+				font-size: 11pt; /*デフォルトは10ptだった*/
 			}
 
 		}
@@ -226,14 +226,14 @@ input, select, textarea {
 
 	sub {
 		font-size: 0.8rem;
-		position: relative;
-		top: 0.5rem;
+		position: relative; 
+		top: 0.2rem; /*添え字の調整 デフォルトは0.5rem*/
 	}
 
 	sup {
 		font-size: 0.8rem;
 		position: relative;
-		top: -0.5rem;
+		top: -0.4rem; /*添え字の調整 デフォルトは-0.5rem*/
 	}
 
 	blockquote {

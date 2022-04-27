@@ -593,13 +593,13 @@ input, select, textarea {
 
 	sub {
 		position: relative;
-		top: 0.5em;
+		top: 0.2em; /*添え字の調整 デフォルトは0.5em*/
 		font-size: 0.8em;
 	}
 
 	sup {
 		position: relative;
-		top: -0.5em;
+		top: -0.4em; /*添え字の調整 デフォルトは-0.5em*/
 		font-size: 0.8em;
 	}
 
