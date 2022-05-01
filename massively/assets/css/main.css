@@ -116,13 +116,13 @@ input, select, textarea {
 /* Type */
 
 	html {
-		font-size: 16pt;
+		font-size: 13pt; /*デフォルトは16ptだった*/
 	}
 
 		@media screen and (max-width: 1680px) {
 
 			html {
-				font-size: 11pt; /*デフォルトは12ptだった*/
+				font-size: 12pt; 
 			}
 
 		}
@@ -138,7 +138,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			html {
-				font-size: 11pt; /*デフォルトは10ptだった*/
+				font-size: 10pt; 
 			}
 
 		}

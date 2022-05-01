@@ -511,7 +511,7 @@ input, select, textarea {
 		@media screen and (max-width: 1920px) {
 
 			body, input, textarea, select {
-				font-size: 17pt; 
+				font-size: 17pt;   /*全体の文字および幅を調整（研究室displayくらい） デフォルトは17pt*/
 			}
 
 		}
@@ -519,7 +519,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) { 
 
 			body, input, textarea, select {
-				font-size: 16pt; /*全体の文字および幅を調整 デフォルトは15pt*/
+				font-size: 16pt; /*全体の文字および幅を調整（surface pro4くらい） デフォルトは15pt*/
 			}
 
 		}
