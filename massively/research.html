@@ -427,7 +427,7 @@ $\left|\Psi_{x y}\right\rangle \equiv \frac{1}{\sqrt{2}}\left(\left|\uparrow\ran
 
 しかもこいつ「どこにも向いてない」ちょっとおかしな状態です。実際、
 $
-\left(\boldsymbol{S}_{1}+\boldsymbol{S}_{2}\right)\left|\Psi_{\mathrm{s}}\right\rangle=0
+\left(\boldsymbol{S}_{1}+\boldsymbol{S}_{2}\right)\left|\Psi_{\mathrm{s}}\right\rangle=\boldsymbol{0}
 $
 であり、
 <div class="css_overflow-y_auto">
@@ -471,7 +471,7 @@ $\alpha$軸回りに$\theta$だけ回転する演算子は$\exp \left(i \theta\l
 古典統計力学では、このHamiltonianに対する温度$T$の分配関数$Z$は$\beta = 1/k_{\rm B}T$（$k_{\rm B}$はボルツマン定数）として
 <div class="css_overflow-y_auto">
 \begin{align}
-Z=\prod_{n=1}^{N} \int \frac{d r_{n} d p_{n}}{(2 \pi \hbar)^{3}} e^{-\beta {\cal{H}}}
+Z=\prod_{n=1}^{N} \int \frac{d \boldsymbol{r}_{n} d \boldsymbol{p}_{n}}{(2 \pi \hbar)^{3}} e^{-\beta {\cal{H}}}
 \end{align}
 </div>
 のように求められます（ちゃんと統計力学を復習してね）。ちなみに、$\boldsymbol{\pi}_{n}=\boldsymbol{p}_{n}+(e / c) \boldsymbol{A}\left(\boldsymbol{r}_{n}\right)$
@@ -479,7 +479,7 @@ Z=\prod_{n=1}^{N} \int \frac{d r_{n} d p_{n}}{(2 \pi \hbar)^{3}} e^{-\beta {\cal
 <div class="css_overflow-y_auto">
 \begin{align}
 \begin{aligned}
-&Z=\prod_{n=1}^{N} \int \frac{d r_{n} d \pi_{n}}{(2 \pi \hbar)^{3}} e^{-\beta {\cal{H}}^{\prime}} \\
+&Z=\prod_{n=1}^{N} \int \frac{d \boldsymbol{r}_{n} d \boldsymbol{\pi}_{n}}{(2 \pi \hbar)^{3}} e^{-\beta {\cal{H}}^{\prime}} \\
 &{\cal{H}}^{\prime}=\sum_{n=1}^{N}\left[\frac{\boldsymbol{\pi}_{n}^{2}}{2 m}-e \phi\left(\boldsymbol{r}_{n}\right)\right]+V\left(\boldsymbol{r}_{1}, \boldsymbol{r}_{2}, \cdots, \boldsymbol{r}_{N}\right)
 \end{aligned}
 \end{align}
@@ -488,15 +488,15 @@ Z=\prod_{n=1}^{N} \int \frac{d r_{n} d p_{n}}{(2 \pi \hbar)^{3}} e^{-\beta {\cal
 <div class="css_overflow-y_auto">
 	\begin{align}
 	\begin{aligned}
-	&Z(\boldsymbol{A} = 0)=\prod_{n=1}^{N} \int \frac{d r_{n} d p_{n}}{(2 \pi \hbar)^{3}} e^{-\beta {\cal{H} (\boldsymbol{A} = 0)}} \\
+	&Z(\boldsymbol{A} = 0)=\prod_{n=1}^{N} \int \frac{d \boldsymbol{r}_{n} d \boldsymbol{p}_{n}}{(2 \pi \hbar)^{3}} e^{-\beta {\cal{H} (\boldsymbol{A} = 0)}} \\
 	&{\cal{H}}(\boldsymbol{A} = 0)=\sum_{n=1}^{N}\left[\frac{\boldsymbol{p}_{n}^{2}}{2 m}-e \phi\left(\boldsymbol{r}_{n}\right)\right]+V\left(\boldsymbol{r}_{1}, \boldsymbol{r}_{2}, \cdots, \boldsymbol{r}_{N}\right)
 	\end{aligned}
 	\end{align}
 </div>
-の計算結果と同じになるはずじゃん。てことは、$Z$は$\boldsymbol{A}$によらない、つまり磁場$\boldsymbol{B}$によらない訳ね。待ってっちゃ…そしたら
+の計算結果と同じになるはずじゃん（$\boldsymbol{p}_n$と$\boldsymbol{\pi}_n$を入れ替えるだけなので）。てことは、$Z$は$\boldsymbol{A}$によらない、つまり磁場$\boldsymbol{B}$によらない訳ね。待ってっちゃ…そしたら
 この系の磁化（磁気モーメント）の統計平均$\left\langle\boldsymbol{\mu}\right\rangle$って…
 \begin{align}
-\left\langle\boldsymbol{\mu}\right\rangle=-\frac{1}{N} \frac{\partial F}{\partial \boldsymbol{B}}=0
+\left\langle\boldsymbol{\mu}\right\rangle=-\frac{1}{N} \frac{\partial F}{\partial \boldsymbol{B}}=\boldsymbol{0}
 \end{align}
 おっと、ゼロになっちゃってます（ここで、$F \equiv - \beta^{-1} \ln Z $はHelmholtzの自由エネルギーです）。
 これだと電磁場下における電子の系が熱平衡状態だと磁化は常にゼロ、磁性を全く示さないってことになっちゃいます。
@@ -511,9 +511,9 @@ $\dot{\boldsymbol{r}} \cdot \boldsymbol{F} = e \dot{\boldsymbol{r}} \cdot \bolds
 	<br><br>
 	<b><font color="red">・「磁気フラストレーション」 ー スピンも欲求不満な状態になる？ ー</font></b> <br>
 　さぁ、やっと私の最近のメインな研究トピックです。「フラストレーション」って言葉は、欲求が何らかの障害によって阻止され、満足されない状態のことを意味しますよね。
-コロナ禍の緊急事態宣言では、満足てきている人もいれば、フラストレーションが溜まっている人もいると思います。みんなが満足できる対策ってなかなか難しいですよね…
+コロナ禍の緊急事態宣言では、満足てきていた人もいれば、フラストレーションが溜まっていた人もいると思います。みんなが満足できる対策ってなかなか難しいですよね…
 それと同じように、
-物質中の電子スピンも、みんなが同時に満足できないような（フラストレートした）状態が生じる場合があります。ここでいう満足できない、というのは
+物質中の電子スピンも、みんなが同時に満足できないような（フラストレートした）状態が生じる場合があります。ここでいう「満足できない」、というのは
 「相互作用のエネルギーを最も得する配置を選べることができない」という意味です。なんのこっちゃ？ってなると思うので簡単な例を出して紹介します。 <br>
 
 
@@ -538,7 +538,7 @@ $\dot{\boldsymbol{r}} \cdot \boldsymbol{F} = e \dot{\boldsymbol{r}} \cdot \bolds
 	  </div>
 	  <p style="text-align:center">
 	  <font face="Times">								
-		<b>Fig.</b> :(a), (b) Antiferromagnetic Ising model. (c) Triangular lattice. (d) Kagomé lattice.	<br>
+		<b>Fig.</b> : (a), (b) Antiferromagnetic Ising model. (c) Triangular lattice. (d) Kagomé lattice.	<br><br>
 		<font face="Arial">	
 		図:
 		(a), (b) 反強磁性イジングモデル.
