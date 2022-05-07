@@ -336,6 +336,7 @@ i & 0
 </div>
 のような性質を満たすんでしたよね。ただ、今は
 $\boldsymbol{S}_{1}$と$\boldsymbol{S}_{2}$の2つのスピンを考えているので2つのスピン状態を表す状態$|\Psi\rangle$を
+<div class="css_overflow-y_auto">
 \begin{align}
 \begin{aligned}
 |\Psi\rangle &=a_{1}|\uparrow\rangle_{1}|\uparrow\rangle_{2}+a_{2}|\uparrow\rangle_{1}|\downarrow\rangle_{2}+a_{3}|\downarrow\rangle_{1}|\uparrow\rangle_{2}+a_{4}|\downarrow\rangle_{1}|\downarrow\rangle_{2} =\left(\begin{array}{l}
@@ -346,7 +347,9 @@ a_{4}
 \end{array}\right)
 \end{aligned}
 \end{align}
+</div>
 と表すことにします。そうすると(1)のHamiltonianは
+<div class="css_overflow-y_auto">
 \begin{align}
 \mathcal{H}=\frac{1}{4}\left(\begin{array}{cccc}
 J & 0 & 0 & 0 \\
@@ -355,49 +358,62 @@ J & 0 & 0 & 0 \\
 0 & 0 & 0 & J
 \end{array}\right)
 \end{align}
+</div>
 と表されます。あとはこいつを対角化すれば、固有値と固有状態がでてくる訳ですね。
 
 ちなみにHamiltonianをちょい変形すると
+<div class="css_overflow-y_auto">
 \begin{align}
 H=J \boldsymbol{S}_{1}\cdot \boldsymbol{S}_{1}= \frac{J}{2}\left\{\left(\boldsymbol{S}_{1}+\boldsymbol{S}_{1}\right)^{2}-\frac{3}{2}\right\}
 \end{align}
-となるわけだから、(1)のHamiltonianの固有状態を求めるのは､合成角運動量$\boldsymbol{S}_{\rm tot} \equiv \boldsymbol{S}_{1}+\boldsymbol{S}_{1}$の固有状態を求めるのと全く同じじゃんってことが解ると思います。
+</div>
+となるわけだから、式(1)のHamiltonianの固有状態を求めるのは､合成角運動量$\boldsymbol{S}_{\rm tot} \equiv \boldsymbol{S}_{1}+\boldsymbol{S}_{1}$の固有状態を求めるのと全く同じじゃんってことが解ると思います。
 さぁ、基底状態を考えていきましょう。<br><br>
 
 <u>強磁性-量子系の場合</u>（$J<0$）<br>
+	<div class="css_overflow-y_auto">
 \begin{align}
 \left|\uparrow\rangle_{1}\right| \uparrow\rangle_{2}, \ \quad\left|\downarrow\rangle_{1}\right| \downarrow\rangle_{2}, \ \quad \frac{1}{\sqrt{2}}\left(\left|\uparrow\rangle_{1}\right| \downarrow\rangle_{2}+\left|\downarrow\rangle_{1}\right| \uparrow\rangle_{2}\right)
 \end{align}
+</div>
 の3つの状態（スピン3重項と言います）が基底状態です。これらの状態はスピンが平行に揃っている状態を表しており、$S_{\rm tot} = 1$で基底エネルギーは$J/4$です。
 $\left|\uparrow\rangle_{1}\right| \uparrow\rangle_{2}, \ \left|\downarrow\rangle_{1}\right| \downarrow\rangle_{2}$は$z$軸方向に揃った状態（$M = S_{\rm tot}^z = \pm 1$）です。
 $M = S_{\rm tot}^z = 0$（スピンが平行に揃っているが全磁化の$z$成分がゼロ）の状態
 $\left|\Psi_{x y}\right\rangle \equiv \frac{1}{\sqrt{2}}\left(\left|\uparrow\rangle_{1}\right| \downarrow\rangle_{2}+\left|\downarrow\rangle_{1}\right| \uparrow\rangle_{2}\right)$
 は$xy$平面を向いていると考えられますが、ちょっと面白いです。というのも、$M_x = S_{\rm tot}^x = S_1^x +S_2^x$，$M_y = S_{\rm tot}^y = S_1^y +S_2^y$として期待値を計算してみると
+<div class="css_overflow-y_auto">
 \begin{align}
 \begin{array}{ll}
 \left\langle\Psi_{x y}\left|M_{x}\right| \Psi_{x y}\right\rangle=0, & \left\langle\Psi_{x y}\left|M_{y}\right| \Psi_{x y}\right\rangle=0 \\
 \left\langle\Psi_{x y}\left|M_{x}^{2}\right| \Psi_{x y}\right\rangle=1, & \left\langle\Psi_{x y}\left|M_{y}^{2}\right| \Psi_{x y}\right\rangle=1
 \end{array}
 \end{align}
+</div>
 となり, $x$方向, $y$方向どちらの方向の磁化の自乗が1になる。つまり両方の向きに揃った状態（あえて言うと$x$方向に揃った状態と$y$方向に揃った状態の線形結合した状態）な訳かぁ。量子力学って不思議だ。
 
 ただ、量子系でも基底状態は2つのスピンが揃って､ある特定の方向を向いているみたいですねぇ。そこに関しては古典系と同じってことかぁ…<br><br>
 
 <u>反強磁性-量子系の場合</u>（$J>0$）<br>
 反強磁性の場合、基底状態はスピン1重項と呼ばれ、
+<div class="css_overflow-y_auto">
 \begin{align}
 \left|\Psi_{\mathrm{s}}\right\rangle=\frac{1}{\sqrt{2}}\left(\left|\uparrow\rangle_{1}\right| \downarrow\rangle_{2}-\left|\downarrow\rangle_{1}\right| \uparrow\rangle_{2}\right)
 \end{align}
+</div>
 となり、$S_{\rm tot} = 0$で基底エネルギーは$-3J/4$です。
 この状態はスピンが反平行になっている状態に対応してそうです。
 そういえば古典系のように単にスピンが反平行となっているNéel状態
+<div class="css_overflow-y_auto">
 \begin{align}
 |\text{Néel}\rangle = \left|\uparrow\rangle_{1}\right| \downarrow\rangle_{2} \ \text{or} \ \left|\downarrow\rangle_{1}\right| \uparrow\rangle_{2}
 \end{align}
+</div>
 ではなくて、それらの重ね合わせの状態な訳かぁ。しかも、基底エネルギーもNéel状態
+<div class="css_overflow-y_auto">
 \begin{align}
 \langle\text{Néel}|\mathcal{H}|\text{Néel}\rangle = -\frac{J}{4}
 \end{align}
+</div>
 に比べて3倍も異なる。この辺が強磁性-量子系のときと違いますね
 （強磁性-量子系のときは古典系から想像できそうな$\left|\uparrow\rangle_{1}\right| \uparrow\rangle_{2}$や$\left|\downarrow\rangle_{1}\right| \downarrow\rangle_{2}$
 が基底状態でしたもんね）。
