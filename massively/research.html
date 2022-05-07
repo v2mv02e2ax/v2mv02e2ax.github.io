@@ -206,7 +206,7 @@
 	<a href="https://ss.scphys.kyoto-u.ac.jp/legacy_QM.php?p=research/res-sub/contents/nmr.html"></a><font color="blue">NMR</font></a>の紹介も<a href="https://ss.scphys.kyoto-u.ac.jp/%e7%a0%94%e7%a9%b6%e7%b4%b9%e4%bb%8b/"><font color="blue">弊研のHP</font></a>に載っているので、割愛。
 	<a href="https://ss.scphys.kyoto-u.ac.jp/qm_media/2020/05/nmr-poster.pdf"><font color="blue">PDF版</font></a>もあるようです。
 	<br><br>
-	<b><font color="red">・「量子スピン系」 ー 量子反強磁性体はおもろいぞって話 ー </font></a></b> <br>
+	<b><font color="red">・「量子スピン系」 ー 古典スピン系と違うの？ ー </font></a></b> <br>
 		<!--式番号や文中に数式使えるようにする  --->
 		<script type="text/x-mathjax-config">
 			MathJax.Hub.Config({TeX:{equationNumbers:{autoNumber:"AMS"}}});
@@ -243,9 +243,8 @@
 
 	<u>【古典スピン系の場合】</u><br>
 　$|\boldsymbol{S}_{1}| = |\boldsymbol{S}_{2}| = $ const. を満たすただの（古典的な）ベクトルだと思えば、
-強磁性（$J<0$）の場合、$\boldsymbol{S}_{1}$と$\boldsymbol{S}_{2}$のスピンが揃ってさえすればよい｡ しかも2つがそろったまま､ どこを向いても構わないです。
-なので基底状態は無限に存在します。
-反強磁性（$J>0$）の場合も同様に、$\boldsymbol{S}_{1}$と$\boldsymbol{S}_{2}$が反対向きに揃ってさえすればいい訳なので、無限に存在しますね。
+強磁性（$J<0$）の場合、$\boldsymbol{S}_{1}$と$\boldsymbol{S}_{2}$のスピンが揃ってさえすればよいです｡ しかも2つがそろったまま､ どこを向いても構わないです。
+反強磁性（$J>0$）の場合も同様に、$\boldsymbol{S}_{1}$と$\boldsymbol{S}_{2}$が反対向きに揃ってさえすればいい訳ですね。
 古典系は当たり前な感じがして特におもろくないです。<br><br>
 
 <u>【量子スピン系の場合】</u><br>
@@ -306,7 +305,7 @@ H=J \boldsymbol{S}_{1}\cdot \boldsymbol{S}_{1}= \frac{J}{2}\left\{\left(\boldsym
 \begin{align}
 \left|\uparrow\rangle_{1}\right| \uparrow\rangle_{2}, \ \quad\left|\downarrow\rangle_{1}\right| \downarrow\rangle_{2}, \ \quad \frac{1}{\sqrt{2}}\left(\left|\uparrow\rangle_{1}\right| \downarrow\rangle_{2}+\left|\downarrow\rangle_{1}\right| \uparrow\rangle_{2}\right)
 \end{align}
-の3つの状態（スピン3重項と言います）の任意の線形結合が基底状態です。やはり、無限個ありそうです。これらの状態はスピンが平行に揃っている状態を表しており、$S_{\rm tot} = 1$で基底エネルギーは$J/4$です。
+の3つの状態（スピン3重項と言います）が基底状態です。これらの状態はスピンが平行に揃っている状態を表しており、$S_{\rm tot} = 1$で基底エネルギーは$J/4$です。
 $\left|\uparrow\rangle_{1}\right| \uparrow\rangle_{2}, \ \left|\downarrow\rangle_{1}\right| \downarrow\rangle_{2}$は$z$軸方向に揃った状態（$M = S_{\rm tot}^z = \pm 1$）です。
 $M = S_{\rm tot}^z = 0$（スピンが平行に揃っているが全磁化の$z$成分がゼロ）の状態
 $\left|\Psi_{x y}\right\rangle \equiv \frac{1}{\sqrt{2}}\left(\left|\uparrow\rangle_{1}\right| \downarrow\rangle_{2}+\left|\downarrow\rangle_{1}\right| \uparrow\rangle_{2}\right)$
@@ -319,10 +318,10 @@ $\left|\Psi_{x y}\right\rangle \equiv \frac{1}{\sqrt{2}}\left(\left|\uparrow\ran
 \end{align}
 となり, $x$方向, $y$方向どちらの方向の磁化の自乗が1になる。つまり両方の向きに揃った状態（あえて言うと$x$方向に揃った状態と$y$方向に揃った状態の線形結合した状態）な訳かぁ。量子力学って不思議だ。
 
-ただ、量子系の強磁性の場合（$J<0$）でも、基底状態は2つのスピンが揃って､ある特定の方向を向いているみたいですねぇ。そこに関しては古典系と同じってことかぁ…<br><br>
+ただ、量子系でも基底状態は2つのスピンが揃って､ある特定の方向を向いているみたいですねぇ。そこに関しては古典系と同じってことかぁ…<br><br>
 
 <u>反強磁性-量子系の場合</u>（$J>0$）<br>
-本題の反強磁性です。この場合、基底状態はスピン1重項と呼ばれ、
+反強磁性の場合、基底状態はスピン1重項と呼ばれ、
 \begin{align}
 \left|\Psi_{\mathrm{s}}\right\rangle=\frac{1}{\sqrt{2}}\left(\left|\uparrow\rangle_{1}\right| \downarrow\rangle_{2}-\left|\downarrow\rangle_{1}\right| \uparrow\rangle_{2}\right)
 \end{align}
@@ -332,25 +331,26 @@ $\left|\Psi_{x y}\right\rangle \equiv \frac{1}{\sqrt{2}}\left(\left|\uparrow\ran
 \begin{align}
 |\text{Néel}\rangle = \left|\uparrow\rangle_{1}\right| \downarrow\rangle_{2} \ \text{or} \ \left|\downarrow\rangle_{1}\right| \uparrow\rangle_{2}
 \end{align}
-ではなくて、それらの重ね合わせの状態な訳か。しかも、基底エネルギーもネール状態
+ではなくて、それらの重ね合わせの状態な訳かぁ。しかも、基底エネルギーもNéel状態
 \begin{align}
 \langle\text{Néel}|\mathcal{H}|\text{Néel}\rangle = -\frac{J}{4}
 \end{align}
 に比べて3倍も異なる。この辺が強磁性-量子系のときと違いますね
-（強磁性-量子系のときは古典系から想像できる$\left|\uparrow\rangle_{1}\right| \uparrow\rangle_{2}$や$\left|\downarrow\rangle_{1}\right| \downarrow\rangle_{2}$
+（強磁性-量子系のときは古典系から想像できそうな$\left|\uparrow\rangle_{1}\right| \uparrow\rangle_{2}$や$\left|\downarrow\rangle_{1}\right| \downarrow\rangle_{2}$
 が基底状態でしたもんね）。
-あれ、そういやこいつ基底状態がたった「1つ」しかなくね？
+<!--- あれ、そういやこいつ基底状態がたった「1つ」しかなくね？
 2つのスピンが逆を向いていればなんでもよいという古典系の考えでは､基底状態は無限に存在するはずです｡
 んじゃ､この「1つ」以外の反対向きの連中はどこへいったんでしょうか？
-実はそもそもこいつ「どこも向いてない」です。えええ？となりますが実際、
+実はそもそもこいつ「どこも向いてない」です。えええ？となりますが--->
+しかもこいつ「どこも向いてない」ちょっとおかしな状態です。実際、
 $
 \left(\boldsymbol{S}_{1}+\boldsymbol{S}_{2}\right)\left|\Psi_{\mathrm{s}}\right\rangle=0
 $
 であり、$\alpha$軸回りに$\theta$だけ回転は演算子は$\exp \left(i \theta\left(S_{1}^{\alpha}+S_{2}^{\alpha}\right)\right)$
-なので、$\left|\Psi_{\mathrm{s}}\right\rangle$は任意の回転について不変です。<br>
+なので、$\left|\Psi_{\mathrm{s}}\right\rangle$は任意の回転について不変です。<br> 
 
-　このように古典的に揃った状態は量子力学的には必ずしも基底状態ではないんですねぇ。（つまり量子系では
-古典的に揃った状態より低エネルギー状態が実現して、その古典的に揃った状態は乱されている。これを｢量子ゆらぎ｣と呼んでいます。）
+　このように古典的に揃った状態は量子力学的には必ずしも基底状態ではないんですねぇ。つまり量子系では
+古典的に揃った状態より低エネルギー状態が実現して、その古典的に揃った状態が乱されている訳です。これを｢量子ゆらぎ｣と呼んでいます。
 ちなみにスピンがたった2つだけで直感に反する現象が起きる訳だから、スピンの数をもっと増やしたら、もっとおもろそうなことが起きそうじゃないですか？
 こういった量子スピン系の研究は興味深いですよ。
 
