@@ -227,6 +227,63 @@
 			});
 		  </script>
 		  <!--文中に数式使えるようにする  --->
+		  <style type="text/css">
+			.common div{
+			  font-family   : "メイリオ", sans-serif;
+			  width         : ;
+			  border        : 2px solid white;
+			  background    :  white;
+			  padding       : 10px;
+			  height        : 20px;
+			}
+			div.cssTitle {
+			  margin-top    : 10px;
+			  background    :  white;
+			  color         :  white;
+			  font-weight   : bold;
+			}
+			.css_overflow_visible{
+			  overflow : visible;
+			}
+			.css_overflow_hidden{
+			  overflow : hidden;
+			}
+			.css_overflow_scroll{
+			  overflow : scroll;
+			}
+			.css_overflow_auto{
+			  overflow : auto;
+			}
+			.css_overflow-x_visible{
+			  overflow-x : visible;
+			  white-space: nowrap;
+			}
+			.css_overflow-x_hidden{
+			  overflow-x : hidden;
+			  white-space: nowrap;
+			}
+			.css_overflow-x_scroll{
+			  overflow-x : scroll;
+			  white-space: nowrap;
+			}
+			.css_overflow-x_auto{
+			  overflow-x : auto;
+			  white-space: nowrap;
+			}
+			.css_overflow-y_visible{
+			  overflow-y : visible;
+			}
+			.css_overflow-y_hidden{
+			  overflow-y : hidden;
+			}
+			.css_overflow-y_scroll{
+			  overflow-y : scroll;
+			}
+			.css_overflow-y_auto{
+			  overflow-y : auto;
+			}
+			</style>
+			<!-- はみ出てもスクロールできるようにする -->
 	　量子力学の簡単の練習問題みたいな話ですが、面白い話なのでここで述べておきます（田崎晴明さんの「量子スピン系の理論」、宮下精二さんの「量子スピン系」を参考にしています）。
 	それぞれスピン$\boldsymbol{S}_{1}$と$\boldsymbol{S}_{2}$をもつ2つの電子があって、以下のようなHeisenberg型のHamiltonianを考えてみましょう。
 
@@ -250,11 +307,14 @@
 <u>【量子スピン系の場合】</u><br>
 　古典系と違って量子系では基底状態において強磁性と反強磁性の間に違いが出てくるんですよねぇ…
 $S=1/2$の場合を考えてみましょう｡ 復習するとup stateとdown stateをそれぞれ
+<div class="css_overflow-y_auto">
 \begin{align}
 |\uparrow \rangle=\left(\begin{array}{l}1 \\ 0\end{array}\right), \quad |\downarrow \rangle=\left(\begin{array}{l}0 \\ 1\end{array}\right)
 \end{align}
+</div>
 とすれば、
 スピンは
+<div class="css_overflow-y_auto">
 \begin{align}
 S^{x}=\frac{1}{2}\left(\begin{array}{ll}
 0 & 1 \\
@@ -267,12 +327,15 @@ i & 0
 0 & -1
 \end{array}\right)
 \end{align}
+</div>
 と表されて、
+<div class="css_overflow-y_auto">
 \begin{align}
 \left[S^{x}, S^{y}\right]=i S^{z},\ \ \left[S^{y},\ \  S^{z}\right]=i S^{x}, \ \ \left[S^{z}, S^{x}\right]=i S^{y}, \ \ \boldsymbol{S}^{2}=S(S+1)
 \end{align}
-のような性質を満たすんでしたよね。今は
-$\boldsymbol{S}_{1}$と$\boldsymbol{S}_{2}$の2つのスピンを考えているので、2つのスピン状態を表す状態$|\Psi\rangle$を
+</div>
+のような性質を満たすんでしたよね。ただ、今は
+$\boldsymbol{S}_{1}$と$\boldsymbol{S}_{2}$の2つのスピンを考えているので2つのスピン状態を表す状態$|\Psi\rangle$を
 \begin{align}
 \begin{aligned}
 |\Psi\rangle &=a_{1}|\uparrow\rangle_{1}|\uparrow\rangle_{2}+a_{2}|\uparrow\rangle_{1}|\downarrow\rangle_{2}+a_{3}|\downarrow\rangle_{1}|\uparrow\rangle_{2}+a_{4}|\downarrow\rangle_{1}|\downarrow\rangle_{2} =\left(\begin{array}{l}
