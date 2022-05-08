@@ -238,7 +238,7 @@ input, select, textarea {
 
 	blockquote {
 		border-left: solid 4px;
-		font-style: italic;
+		font-style: ; /*blockquoteでの文字の調整。デフォルトはfont-style: italic;*/
 		margin: 0 0 2rem 0;
 		padding: 0.5rem 0 0.5rem 2rem;
 	}
