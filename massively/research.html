@@ -120,6 +120,29 @@
 									</style>
 									<!-- はみ出てもスクロールできるようにする -->
 
+											<!--式番号や文中に数式使えるようにする  --->
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({TeX:{equationNumbers:{autoNumber:"AMS"}}});
+		 </script>
+		 <script type="text/javascript" async 
+			 src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML,/www_func/MathJax/MyConfig.js">
+		 </script>
+		 <script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+			  TeX: { equationNumbers: { autoNumber: "AMS" }},
+			  tex2jax: {
+				inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+				processEscapes: true
+			  },
+			  "HTML-CSS": { matchFontHeight: false },
+			  displayAlign: "center",
+			  displayIndent: "2em"
+			});
+		  </script>
+		  <!--文中に数式使えるようにする  --->
+
+
+
 								<hr />
 								<font face="Arial">
 								<dl>
@@ -173,12 +196,12 @@
 											超常現象のような不思議な事件を解決していくという話ですね
 											（2022年9月に<a href="https://www.youtube.com/watch?v=nsTUuK3f8FQ" target="_blank"><font color="blue">「ガリレオ」映画第3弾「沈黙のパレード」</font></a>が公開されますね！楽しみ！）。
 											私は、あのカッコいい福山雅治と同じようなことをしています
-											（ただ残念ながら、あれほど容姿端麗、頭脳明晰、スポーツ万能ではないですね）。
+											（ただ残念ながら、あれほど容姿端麗、頭脳明晰、スポーツ万能ではないですね…）。
 											<br>
 											
 											　さらにもっと詳しい話をすると、「物質」に着目して研究しています。
 											世の中は多種多様な「物質」でできています。
-											中学校の理科では、その「物質」が様々な性質を持っていたり、色んな状態になったりすることを学ぶと思います。
+											中学校理科では、その「物質」が様々な性質を持っていたり、色んな状態になったりすることを学ぶと思います。
 											電流を通しやすかったり、熱を伝えやすかったり、磁石に引き付けられたり、気体・液体・固体の状態変化をしたり、と。
 											「世の中の物質の性質とかってもう学者さんたちが調べ尽くして、全部わかってるんじゃね？」と思うかもしれませんが、
 											実は世の中にはどんな性質を持っているのか、どうしてそのような性質を持つのかまだよくわかってない物質がたくさんあります。
@@ -206,7 +229,7 @@
 											<p><u><font face="Arial" color="#660000">〇<b><font face="Arial" color="#660000">「物性物理学」とは何ぞや？</u>
 												　ー 物理学は知ってるけど「物性物理学」に馴染みのない高校生や学部生向け ー </b></font></font>
 												<dd>
-												　私の専門である「物性物理学」は物質の多種多様な性質を物理的な観点から明らかにする分野です。
+												　私の専門である「物性物理学（Condensed matter physics）」は物質の多種多様な性質を物理的な観点から明らかにする分野です。
 												ただ、この分野はあまり聞き慣れないかもしれません。
 恐らく、宇宙物理学や素粒子物理学などに憧れて物理学を勉強したい、研究したいと考えている人の方がが多いんじゃないのかな？
 ちなみに、私も高校時代に科学雑誌「Newton（ニュートン）」を読み「相対性理論、面白そう！」「素粒子とかかっけぇ！」「超ひも理論！何それ！」
@@ -225,12 +248,12 @@
 20世紀半ばまでの物理学は、素粒子物理学のような
 「複雑な物事でも、それを構成する要素に分解して、それらの個別の要素だけの性質さえ分かれば、
 元の複雑な物事も説明できる」とする考え方（要素還元主義）が主流でした。
-ところが、物質中には アボガドロ定数（~ 10<sup>23</sup>個）くらいの膨大な数の原子や電子が集まっているため、電子1つ1つの性質だけでは到底理解できない面白い現象が多々起こります。
+ところが、物質中には アボガドロ定数（~ 10<sup>23</sup>個 <font face="Times"> * </font>）くらいの膨大な数の原子や電子が集まっているため、電子1つ1つの性質だけでは到底理解できない面白い現象が多々起こります。
 （人間の場合、ある集団に所属している1人の性格や行動を理解していたとしても、
 集団全体がその人と違う行動をとることとかありますよね。家族、学校、会社、社会全体とか。）
 「More is different」という言葉はこの内容を指摘した
 <a href="https://www.science.org/doi/10.1126/science.177.4047.393" target="_blank"><font color="blue">
-1972年のアンダーソン（P.W. Anderson）の論文</font></a><font face="Times"> * </font>のタイトルです（アンダーソンは馴染みがないかもしれませんが1977年のノーベル物理学賞受賞者ですよ）。「多は異なり」…かっちょいぃ！
+1972年のアンダーソン（P.W. Anderson）の論文</font></a><font face="Times"> ** </font>のタイトルです（アンダーソンは馴染みがないかもしれませんが1977年のノーベル物理学賞受賞者ですよ）。「多は異なり」…かっちょいぃ！
 我々、物性物理学を研究している者は電磁気学・量子力学・統計力学（これらは大学の学部生で詳しく勉強します）といった物理的な考え方を駆使して、
 まさにこの「More is different」の世界を追求している訳ですね。<br><br>
 
@@ -243,7 +266,13 @@
 </sup>
 <br><br><sub>
 <font face="Times">
-* P.W. Anderson, Science <b>177</b>, 393 (1972).
+* 100000000000000000000000個.
+ちなみに, 長さ0.50&nbsp;cmの米粒を$6.0\times 10^{23}$&nbsp;個直線に並べると、その距離は$3.0\times 10^{23}$&nbsp;cmになります。これは, 地球と太陽間
+（$1.5\times 10^{13}$&nbsp;cm）を$1.0\times 10^{10} = 10000000000$往復する距離に相当します（めっちゃ大きいね）.
+別の例をあげると、80億人（世界の総人口くらい？）ひとりひとりが100兆円（日本の国家予算くらい？）持っていたとすると総額$8\times 10^{23}$&nbsp;円になりますね（やばすぎるやろ）.
+<br>
+
+** P.W. Anderson, Science <b>177</b>, 393 (1972).
 </font>
 </sub>
 
@@ -376,26 +405,7 @@ frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
 <details>
 	<summary>
 	<b><font color="red">「量子スピン系」 ー 古典系とは異なる直観に反した基底状態 ー </font></a></b> </summary>
-		<!--式番号や文中に数式使えるようにする  --->
-		<script type="text/x-mathjax-config">
-			MathJax.Hub.Config({TeX:{equationNumbers:{autoNumber:"AMS"}}});
-		 </script>
-		 <script type="text/javascript" async 
-			 src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML,/www_func/MathJax/MyConfig.js">
-		 </script>
-		 <script type="text/x-mathjax-config">
-			MathJax.Hub.Config({
-			  TeX: { equationNumbers: { autoNumber: "AMS" }},
-			  tex2jax: {
-				inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-				processEscapes: true
-			  },
-			  "HTML-CSS": { matchFontHeight: false },
-			  displayAlign: "center",
-			  displayIndent: "2em"
-			});
-		  </script>
-		  <!--文中に数式使えるようにする  --->
+
 	　電子は「スピン」という小さい磁石のような自由度を持っているということを量子力学で習いますよね。
 	物質中で複数の電子が相互作用していると「<a href="https://ss.scphys.kyoto-u.ac.jp/legacy_QM.php?p=research/res-sub/contents/magnetism.html" target="_blank"><font color="blue">磁性と超伝導</font></a>」の箇所で紹介しているようにスピンは周期的に整列しよう（秩序しよう）とします。
 だた、相互作用によっては量子力学的な効果が明確に表れて、古典スピン（ただのベクトル）では予想できないような不思議な状態になる場合があります
@@ -419,7 +429,7 @@ frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
 	<u>【古典スピン系の場合】</u><br>
 $|\boldsymbol{S}_{1}| = |\boldsymbol{S}_{2}| = $ const.を満たすただのベクトルだと思えば、
 強磁性の場合（$J<0$）$\boldsymbol{S}_{1}$と$\boldsymbol{S}_{2}$のスピンが揃ってさえすればよいです。2つが揃ったまま､ どこを向いても構わない訳です。
-反強磁性の場合（$J>0$）も同様に、$\boldsymbol{S}_{1}$と$\boldsymbol{S}_{2}$が反対向きに揃ってさえすればいい訳ですね（単にスピンが反平行に揃っているネール状態と呼びます）。
+反強磁性の場合（$J>0$）も同様に、$\boldsymbol{S}_{1}$と$\boldsymbol{S}_{2}$が反対向きに揃ってさえすればいい訳ですね（単にスピンが反平行に揃っている状態をネール状態と呼びます）。
 古典系は当たり前な感じがして特におもろくないです。<br><br>
 
 <u>【量子スピン系の場合】</u><br>
