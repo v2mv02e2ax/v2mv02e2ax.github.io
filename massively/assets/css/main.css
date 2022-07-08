@@ -3244,7 +3244,7 @@ input, select, textarea {
 
 			#wrapper > .bg.fixed {
 				position: fixed;
-				width: 100vw;
+				width: 100vw; /*背景画像の大きさ?デフォルトは, width: 100vw　height: 100vh*/
 				height: 100vh;
 			}
 
@@ -3276,7 +3276,7 @@ input, select, textarea {
 		@media screen and (orientation: portrait) {
 
 			#wrapper > .bg {
-				background-size: auto,								auto,														auto 175%;
+				background-size: auto,								auto,														auto 80%; /*スマホの背景画像の大きさ? デフォルトは175%*/
 			}
 
 		}
