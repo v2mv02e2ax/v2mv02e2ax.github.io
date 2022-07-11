@@ -3276,7 +3276,7 @@ input, select, textarea {
 		@media screen and (orientation: portrait) {
 
 			#wrapper > .bg {
-				background-size: auto,								auto,														auto 90%; /*スマホの背景画像の大きさ? デフォルトは175%*/
+				background-size: auto,								auto,														auto 85%; /*スマホの背景画像の大きさ? デフォルトは175%*/
 			}
 
 		}
