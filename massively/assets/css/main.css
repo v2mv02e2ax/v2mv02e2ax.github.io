@@ -3222,7 +3222,7 @@ input, select, textarea {
 		-webkit-transition: opacity 0.5s ease;
 		-ms-transition: opacity 0.5s ease;
 		transition: opacity 0.5s ease;
-		position: relative;
+		/*position: relative;   /*ここを消すとbackground-position:center,	center, centerでtop centerにしないと画像が消えるバグが無くなる?よくわからない*/
 		z-index: 1;
 		overflow: hidden;
 	}
@@ -3236,7 +3236,7 @@ input, select, textarea {
 			background-color: #212931; /*背景写真が途切れたところの色 デフォルトは#212931*/
 			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg"); /*背景画像*/
 			background-size: auto,								auto,														100% auto; /*背景画像の大きさ?デフォルトは100%*/
-			background-position: center,								center,														center; /*デフォルトはcenter,	center,top center*/
+			background-position: center,								center,														center; /*デフォルトはcenter,	center, top center */
 			background-repeat: repeat,								no-repeat,													no-repeat; /*ここの行を消すと背景写真が途切れずにリピートする*/
 			background-attachment: scroll,								scroll,														scroll;
 			z-index: -1;
