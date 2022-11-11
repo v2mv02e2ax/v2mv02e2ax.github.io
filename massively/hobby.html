@@ -463,8 +463,12 @@
 												<b><font color="red">結晶場中における局在4f電子系の波動関数</font></b></summary>
 												　結晶場ハミルトニアンの行列要素を計算し，対角化して固有値問題を解く。数値計算モジュールNumPyを使用。
 
+												<iframe
+												
+												style="border:1px #660000 dashed"></iframe>
 
-												<pre><code><h6><font color="#778899">import numpy as np
+<a href="python\CEF.html" target="_blank">
+												<pre><code>import numpy as np
 
 ###Calculation Stevens Operators#################################################
 
@@ -482,12 +486,13 @@ f6_int = [0,0,0,180,1260,1260,7560,3780]#Jが整数の場合のF(6)
 f6_half = [0,0,0,0,0,0,0,1260,0,2520,0,3780,0,7560,0,13860] #Jが半整数の場合のF(6)
 
 if isinstance(J, int):
-    f4 = f4_int[J]
-    f6 = f6_int[J]
+	f4 = f4_int[J]
+	f6 = f6_int[J]
 else:
-    f4 = f4_half[round(J*2)]
-    f6 = f6_half[round(J*2)]
+	f4 = f4_half[round(J*2)]
+	f6 = f6_half[round(J*2)]
 
+print('Landé g-factor g_J')
 print(g_J)
 
 ###Matrix#########################################################################
@@ -522,7 +527,6 @@ O_66 = ((J_plus@J_plus@J_plus@J_plus@J_plus@J_plus - J_minus@J_minus@J_minus@J_m
 
 # cubic(立方), hexagonal(六方), tetragonal(正方)ではO_43, O_63が出てこない. 
 
-
 ### Calculation of CEF Hamiltonian #############################################
 
 #(selection CEF Hamiltonian type)  1:Standard Style, 2: LLW Style
@@ -544,23 +548,36 @@ WW = -5.3
 XX = -0.8
 
 if S == 1:
-    H_CEF = B_20*O_20 + B_22*O_22 + B_40*O_40 + B_42*O_42 + B_44*O_44 + B_60*O_60 + B_62*O_62 + B_64*O_64 + B_66*O_66
+	H_CEF = B_20*O_20 + B_22*O_22 + B_40*O_40 + B_42*O_42 + B_44*O_44 + B_60*O_60 + B_62*O_62 + B_64*O_64 + B_66*O_66
 elif f6 == 0:
-    H_CEF = WW*( (XX/f4) *(O_40+5*O_44) )
+	H_CEF = WW*( (XX/f4) *(O_40+5*O_44) )
 else:
-    H_CEF = WW*( (XX/f4) *(O_40+5*O_44) + (1-abs(XX))*(O_60 - 21*O_64)/f6 )
+	H_CEF = WW*( (XX/f4) *(O_40+5*O_44) + (1-abs(XX))*(O_60 - 21*O_64)/f6 )
 
+print('Crystal electric field Hamiltonian')
 print(H_CEF)
 
 E_CEF, psi_CEF = np.linalg.eigh(H_CEF, 'L')
 E_CEF =  E_CEF - min(E_CEF)
 
-#print(psi_CEF)
+print('eigen function')
+print(psi_CEF)
+print('energy eigenvalue')
 print(E_CEF)
 
-J_z_CEF = np.dot(np.dot( np.conj(psi_CEF.T),J_z),psi_CEF)
 
-print(J_z_CEF)</font></h6></code></pre>
+# matrix elements of multipole operators
+J_z_CEF = np.dot(np.dot( np.conj(psi_CEF.T),J_z),psi_CEF)
+O_20_CEF = np.dot(np.dot( np.conj(psi_CEF.T),O_20),psi_CEF)
+O_22_CEF = np.dot(np.dot( np.conj(psi_CEF.T),O_22),psi_CEF)
+
+print('matrix elements of multipole operators')
+print('J_Z')
+print(J_z_CEF)
+print('O_20')
+print(O_20_CEF)
+print('O_22')
+print(O_22_CEF)</code></pre>
 
 </details>
 
