@@ -249,7 +249,7 @@ input, select, textarea {
 		font-size: 0.7rem; /* <code>での文字の調整。デフォルトはfont-size: 0.9rem*/
 		margin: 0 0.25rem;
 		padding: 0.25rem 0.65rem;
-		height: 500px; /*追加*/
+		height: 500px; /*追加。<code>での縦の長さを指定*/
 	}
 
 	pre {
