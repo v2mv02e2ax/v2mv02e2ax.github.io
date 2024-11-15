@@ -68,7 +68,7 @@ O_66 = ((J_plus@J_plus@J_plus@J_plus@J_plus@J_plus - J_minus@J_minus@J_minus@J_m
 ### Calculation of CEF Hamiltonian #############################################
 
 #(selection CEF Hamiltonian type)  1:Standard Style, 2: LLW Style
-S = 2
+Selection = 2
 
 # Input CEF Parameters
 B_20 = 0.0
@@ -85,7 +85,7 @@ B_66 = 0.0
 WW = -5.3
 XX = -0.8
 
-if S == 1:
+if Selection == 1:
     H_CEF = B_20*O_20 + B_22*O_22 + B_40*O_40 + B_42*O_42 + B_44*O_44 + B_60*O_60 + B_62*O_62 + B_64*O_64 + B_66*O_66
 elif f6 == 0:
     H_CEF = WW*( (XX/f4) *(O_40+5*O_44) )
