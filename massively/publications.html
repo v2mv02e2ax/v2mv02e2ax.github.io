@@ -110,6 +110,32 @@
 					<!-- はみ出てもスクロールできるようにする -->
 
 
+
+<!--式番号や文中に数式使えるようにする  --->
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({TeX:{equationNumbers:{autoNumber:"AMS"}}});
+		 </script>
+		 <script type="text/javascript" async 
+			 src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML,/www_func/MathJax/MyConfig.js">
+		 </script>
+		 <script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+			  TeX: { equationNumbers: { autoNumber: "AMS" }},
+			  tex2jax: {
+				inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+				processEscapes: true
+			  },
+			  "HTML-CSS": { matchFontHeight: false },
+			  displayAlign: "center",
+			  displayIndent: "2em"
+			});
+		  </script>
+		  <!--文中に数式使えるようにする  --->
+
+
+
+
+
 					
 				<!-- Main -->
 					<div id="main">
@@ -184,7 +210,7 @@
 											
 											<p>
 												S. Kitagawa, <b><font color="green"><u>F. Hori</font></b></u>, K. Ishida, R. Oishi, Y. Shimura, T. Onimaru, and T. Takabatake<br>
-												<a href="https://journals.jps.jp/doi/10.7566/JPSJ.94.094702" target="_blank"><font color="blue">"Antiferromagnetic Order and Magnetic Frustration in the Honeycomb Heavy-Fermion System Ce(Pt<sub>1-<i>x</i></sub>Pd<sub><i>x</i></sub>)<sub>6</sub>Al<sub>3</sub>: <sup>27</sup>Al and <sup>195</sup>Pt NMR Studies"</a></font><br>
+												<a href="https://journals.jps.jp/doi/10.7566/JPSJ.94.094702" target="_blank"><font color="blue">"Antiferromagnetic Order and Magnetic Frustration in the Honeycomb Heavy-Fermion System Ce(Pt$_{1-x}$Pdx)<sub>6</sub>Al<sub>3</sub>: <sup>27</sup>Al and <sup>195</sup>Pt NMR Studies"</a></font><br>
 												J. Phys. Soc. Jpn. <b>94</b>, 094702 (2025); <a href="https://arxiv.org/abs/2507.22532" target="_blank"><font color="blue">arXiv:2507.22532</font></a>.
 											</p>
 
