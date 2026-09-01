@@ -1043,38 +1043,53 @@ frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
 											
 
 
+<!-- スマホでは横スクロール -->
 <div style="
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
 ">
 
-  <!-- 画像 -->
-  <div>
-    <img
-      src="images/multipole_card.png"
-      style="
-        height: 300px;
-        width: auto;
-        object-fit: contain;
-        display: block;
-      "
-    >
-  </div>
+  <!-- 画像＋動画 -->
+  <div style="
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: max-content;
+    min-width: 100%;
+    justify-content: center;
+  ">
 
-  <!-- YouTube -->
-  <div>
-    <iframe
-      width="500"
-      height="300"
-      src="https://www.youtube.com/embed/mAddXM0Py9I"
-      frameborder="0"
-      allow="autoplay; encrypted-media"
-      allowfullscreen
-      style="display: block;"
-    >
-    </iframe>
+    <!-- 画像 -->
+    <div>
+      <img
+        src="images/multipole_card.png"
+        style="
+          height: 270px;
+          width: auto;
+          object-fit: contain;
+          display: block;
+          max-width: none;
+        "
+      >
+    </div>
+
+    <!-- YouTube -->
+    <div>
+      <iframe
+        width="450"
+        height="270"
+        src="https://www.youtube.com/embed/mAddXM0Py9I"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+        style="
+          display: block;
+          max-width: none;
+        "
+      ></iframe>
+    </div>
+
   </div>
 
 </div>
